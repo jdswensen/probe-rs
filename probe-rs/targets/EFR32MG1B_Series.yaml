@@ -1,8 +1,8 @@
-name: EFR32MG1P Series
+name: EFR32MG1B Series
 generated_from_pack: true
 pack_file_release: 4.3.0
 variants:
-- name: EFR32MG1P131F256GM48
+- name: EFR32MG1B131F256GM32
   cores:
   - name: main
     type: armv7em
@@ -27,7 +27,7 @@ variants:
     - main
   flash_algorithms:
   - geckop2
-- name: EFR32MG1P132F256GJ43
+- name: EFR32MG1B131F256GM48
   cores:
   - name: main
     type: armv7em
@@ -52,7 +52,7 @@ variants:
     - main
   flash_algorithms:
   - geckop2
-- name: EFR32MG1P132F256GM32
+- name: EFR32MG1B132F256GJ43
   cores:
   - name: main
     type: armv7em
@@ -77,7 +77,7 @@ variants:
     - main
   flash_algorithms:
   - geckop2
-- name: EFR32MG1P132F256GM48
+- name: EFR32MG1B132F256GM32
   cores:
   - name: main
     type: armv7em
@@ -102,7 +102,7 @@ variants:
     - main
   flash_algorithms:
   - geckop2
-- name: EFR32MG1P132F256IM32
+- name: EFR32MG1B132F256GM48
   cores:
   - name: main
     type: armv7em
@@ -127,7 +127,7 @@ variants:
     - main
   flash_algorithms:
   - geckop2
-- name: EFR32MG1P132F256IM48
+- name: EFR32MG1B231F256GM32
   cores:
   - name: main
     type: armv7em
@@ -152,7 +152,7 @@ variants:
     - main
   flash_algorithms:
   - geckop2
-- name: EFR32MG1P133F256GM48
+- name: EFR32MG1B231F256GM48
   cores:
   - name: main
     type: armv7em
@@ -177,7 +177,7 @@ variants:
     - main
   flash_algorithms:
   - geckop2
-- name: EFR32MG1P231F256GM48
+- name: EFR32MG1B232F256GJ43
   cores:
   - name: main
     type: armv7em
@@ -202,7 +202,7 @@ variants:
     - main
   flash_algorithms:
   - geckop2
-- name: EFR32MG1P232F256GJ43
+- name: EFR32MG1B232F256GM32
   cores:
   - name: main
     type: armv7em
@@ -227,7 +227,7 @@ variants:
     - main
   flash_algorithms:
   - geckop2
-- name: EFR32MG1P232F256GM32
+- name: EFR32MG1B232F256GM48
   cores:
   - name: main
     type: armv7em
@@ -252,7 +252,7 @@ variants:
     - main
   flash_algorithms:
   - geckop2
-- name: EFR32MG1P232F256GM48
+- name: EFR32MG1B232F256IM48
   cores:
   - name: main
     type: armv7em
@@ -277,7 +277,7 @@ variants:
     - main
   flash_algorithms:
   - geckop2
-- name: EFR32MG1P232F256IM32
+- name: EFR32MG1B632F256GM32
   cores:
   - name: main
     type: armv7em
@@ -302,7 +302,7 @@ variants:
     - main
   flash_algorithms:
   - geckop2
-- name: EFR32MG1P232F256IM48
+- name: EFR32MG1B632F256IM32
   cores:
   - name: main
     type: armv7em
@@ -327,7 +327,7 @@ variants:
     - main
   flash_algorithms:
   - geckop2
-- name: EFR32MG1P233F256GM48
+- name: EFR32MG1B732F256GM32
   cores:
   - name: main
     type: armv7em
@@ -352,107 +352,7 @@ variants:
     - main
   flash_algorithms:
   - geckop2
-- name: EFR32MG1P233F256IM48
-  cores:
-  - name: main
-    type: armv7em
-    core_access_options: !Arm
-      ap: 0
-      psel: 0
-  memory_map:
-  - !Ram
-    name: IRAM1
-    range:
-      start: 0x20000000
-      end: 0x20007c00
-    cores:
-    - main
-  - !Nvm
-    name: IROM1
-    range:
-      start: 0x0
-      end: 0x40000
-    is_boot_memory: true
-    cores:
-    - main
-  flash_algorithms:
-  - geckop2
-- name: EFR32MG1P632F256GM32
-  cores:
-  - name: main
-    type: armv7em
-    core_access_options: !Arm
-      ap: 0
-      psel: 0
-  memory_map:
-  - !Ram
-    name: IRAM1
-    range:
-      start: 0x20000000
-      end: 0x20007c00
-    cores:
-    - main
-  - !Nvm
-    name: IROM1
-    range:
-      start: 0x0
-      end: 0x40000
-    is_boot_memory: true
-    cores:
-    - main
-  flash_algorithms:
-  - geckop2
-- name: EFR32MG1P632F256IM32
-  cores:
-  - name: main
-    type: armv7em
-    core_access_options: !Arm
-      ap: 0
-      psel: 0
-  memory_map:
-  - !Ram
-    name: IRAM1
-    range:
-      start: 0x20000000
-      end: 0x20007c00
-    cores:
-    - main
-  - !Nvm
-    name: IROM1
-    range:
-      start: 0x0
-      end: 0x40000
-    is_boot_memory: true
-    cores:
-    - main
-  flash_algorithms:
-  - geckop2
-- name: EFR32MG1P732F256GM32
-  cores:
-  - name: main
-    type: armv7em
-    core_access_options: !Arm
-      ap: 0
-      psel: 0
-  memory_map:
-  - !Ram
-    name: IRAM1
-    range:
-      start: 0x20000000
-      end: 0x20007c00
-    cores:
-    - main
-  - !Nvm
-    name: IROM1
-    range:
-      start: 0x0
-      end: 0x40000
-    is_boot_memory: true
-    cores:
-    - main
-  flash_algorithms:
-  - geckop2
-- name: EFR32MG1P732F256IM32
+- name: EFR32MG1B732F256IM32
   cores:
   - name: main
     type: armv7em
